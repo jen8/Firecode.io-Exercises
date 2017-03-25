@@ -1,0 +1,13 @@
+# Firecode Problem 1 - Write a function - duplicate items to find the redundant or repeated items in a list and return them in sorted order. This method should return a list of redundant integers in ascending sorted order 
+
+def duplicate_items(list_numbers):
+    lst = []
+    duplicates = []
+    for n in list_numbers:
+        if n not in lst:
+            lst.append(n)
+        else:
+            duplicates.append(n)
+    return sorted(dups)
+
+
