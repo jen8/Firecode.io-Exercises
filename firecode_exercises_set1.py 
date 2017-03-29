@@ -1,4 +1,4 @@
-# Firecode Problem 1 - Write a function - duplicate items to find the redundant or repeated items in a list and return them in sorted order. This method should return a list of redundant integers in ascending sorted order 
+# Firecode Problem 1 - Write a function, duplicate items to find the redundant or repeated items in a list and return them in sorted order. This method should return a list of redundant integers in ascending sorted order 
 
 def duplicate_items(list_numbers):
     lst = []
@@ -10,4 +10,19 @@ def duplicate_items(list_numbers):
             duplicates.append(n)
     return sorted(dups)
 
+# Firecode Problem 2 - Given a list containing 9 numbers,
+# ranging from 1 to 10, write a function to find the
+# missing number. Assume you have 9 numbers between 1 to 10 and only one number is missing.
+
+def find_missing_number(list_numbers):
+    sum_of_lst = sum(list_numbers)
+    expected_sum = 0
+    for n in range(1,11):
+        expected_sum = expected_sum + n
+        continue
+    if sum_of_lst != expected_sum:
+        missing_num = expected_sum - sum_of_lst
+        return missing_num
+    else:
+        return "There isn't a missing number in this list"
 
